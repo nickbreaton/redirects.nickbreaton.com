@@ -23,9 +23,9 @@ export const App = () => {
 
   return (
     <div class="p-4 text-neutral-900 grid gap-6 max-w-xl m-auto">
-      <header class="grid gap-2">
+      <header class="grid gap-2 cursor-default">
         <h1 class="text-3xl font-bold">Redirect Validator</h1>
-        <p>Quickly validate that common redirects are working as expected.</p>
+        <p>Quickly check that common redirects are working as expected.</p>
       </header>
       <form>
         <div class="grid gap-2">
@@ -54,7 +54,7 @@ export const App = () => {
               disabled={!isValid()}
               class="
                 px-3 m-1.5 bg-[#007AFF] font-medium rounded cursor-pointer touch-manipulation text-white text-sm transition-opacity duration-100
-                disabled:cursor-not-allowed disabled:bg-neutral-200 disabled:text-neutral-400
+                disabled:cursor-default disabled:bg-neutral-200 disabled:text-neutral-400
                 not-disabled:active:opacity-75
               "
             >
@@ -64,7 +64,7 @@ export const App = () => {
         </div>
       </form>
       <div class="grid gap-2">
-        <h2 class="font-semibold text-lg">Results</h2>
+        <h2 class="font-semibold text-lg cursor-default">Results</h2>
         <ResultCard
           title="Protocol redirect"
           from={[

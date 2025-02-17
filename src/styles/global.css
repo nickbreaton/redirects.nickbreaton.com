@@ -11,3 +11,12 @@ body {
   text-rendering: geometricPrecision;
   height: 100%;
 }
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
