@@ -32,7 +32,10 @@ export const App = () => {
           <label for="destination" class="font-semibold text-lg">
             Destination
           </label>
-          <div class="grid grid-cols-[1fr_max-content] border rounded-lg border-neutral-300 has-[input:focus]:border-neutral-900">
+          <div
+            class="grid grid-cols-[1fr_max-content] border rounded-lg border-neutral-300
+            outline-neutral-900 has-[input:focus]:border-neutral-900  has-[input:focus]:outline-1"
+          >
             <input
               id="destination"
               name="destination"
@@ -40,7 +43,7 @@ export const App = () => {
               value={value()}
               onInput={(event) => setValue(event.target.value)}
               onFocus={(event) => event.target.select()}
-              class="py-2 px-3 placeholder-neutral-400 outline-none"
+              class="py-3 px-3 placeholder-neutral-400 outline-none"
               autocomplete="off"
               autocorrect="off"
               autocapitalize="none"
@@ -49,9 +52,13 @@ export const App = () => {
             />
             <button
               disabled={!isValid()}
-              class="px-3 m-1 bg-blue-600 rounded cursor-pointer text-white text-sm disabled:cursor-not-allowed disabled:bg-neutral-400"
+              class="
+                px-3 m-1.5 bg-[#007AFF] font-medium rounded cursor-pointer touch-manipulation text-white text-sm transition-opacity duration-100
+                disabled:cursor-not-allowed disabled:bg-neutral-200 disabled:text-neutral-400
+                not-disabled:active:opacity-75
+              "
             >
-              validate
+              Validate →
             </button>
           </div>
         </div>
