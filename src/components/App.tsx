@@ -22,7 +22,7 @@ export const App = () => {
   };
 
   return (
-    <div class="p-4 text-neutral-900 grid gap-6 max-w-xl m-auto">
+    <div class="p-4 text-neutral-900 flex flex-col min-h-dvh gap-6 max-w-xl m-auto">
       <header class="grid gap-2 cursor-default">
         <h1 class="text-3xl font-bold">Redirect Validator</h1>
         <p>Quickly check that common redirects are working as expected.</p>
@@ -114,6 +114,33 @@ export const App = () => {
             ]}
           />
         </Show>
+      </div>
+      <div class="grow flex items-end justify-center text-center">
+        <footer class="text-sm text-neutral-500 underline-offset-3">
+          <ul>
+            <li class="inline">
+              Fork on{" "}
+              <a
+                href="https://github.com/nickbreaton/redirects.nickbreaton.com"
+                target="_blank"
+                class="underline"
+              >
+                GitHub
+              </a>
+            </li>
+            &nbsp;•&nbsp;
+            <li class="inline">
+              Created by{" "}
+              <a
+                href="https://nickbreaton.com"
+                target="_blank"
+                class="underline"
+              >
+                Nick Breaton
+              </a>
+            </li>
+          </ul>
+        </footer>
       </div>
     </div>
   );

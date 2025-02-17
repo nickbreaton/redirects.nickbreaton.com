@@ -9,7 +9,6 @@
 html,
 body {
   text-rendering: geometricPrecision;
-  height: 100%;
 }
 
 .no-scrollbar {
