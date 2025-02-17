@@ -1,8 +1,19 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import { name } from "../../package.json";
+import { App } from "../components/App";
+import "./src/styles/global.css";
 ---
 
-<Layout>
-  <h1>Redirect Validator</h1>
-  <p>Quickly validate that host-level redirects are working as expected.</p>
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{name}</title>
+  </head>
+  <body>
+    <App client:load />
+  </body>
+</html>

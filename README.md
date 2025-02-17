@@ -1,3 +1,3 @@
 # Redirect Validator
 
-Quickly validate that host-level redirects are working as expected.
+Quickly validate that common redirects are working as expected.
