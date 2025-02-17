@@ -6,6 +6,7 @@ import {
   type JSXElement,
 } from "solid-js";
 import { ResultCard } from "./ResultCard";
+import { WorkInProgress } from "./WorkInPrgoress";
 
 export const App = () => {
   const placeholder = "example.com";
@@ -23,6 +24,7 @@ export const App = () => {
 
   return (
     <div class="p-4 text-neutral-900 flex flex-col min-h-dvh gap-6 max-w-xl m-auto">
+      <WorkInProgress />
       <header class="grid gap-2 cursor-default">
         <h1 class="text-3xl font-bold">Redirect Validator</h1>
         <p>Quickly check that common redirects are working as expected.</p>
